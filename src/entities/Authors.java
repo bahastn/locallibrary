@@ -32,7 +32,7 @@ public class Authors {
         this.authorId = authorId;
     }
 
-    @Column(name = "AUTHOR_NUMBER" , length = 600)
+    @Column(name = "AUTHOR_NUMBER")
     public String getAuthorNumber() {
         return authorNumber;
     }
@@ -40,7 +40,7 @@ public class Authors {
     public void setAuthorNumber(String authorNumber) {
         this.authorNumber = authorNumber;
     }
-    @Column(name = "AUTHOR_NAME" , length = 550)
+    @Column(name = "AUTHOR_NAME" )
     public String getAuthorName() {
         return authorName;
     }

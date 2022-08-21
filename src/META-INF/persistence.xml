@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
 
 	<persistence-unit name="JPA_UNIT">
 		<class>entities.Authors</class>
 		<class>entities.Books</class>
 		<class>entities.Language</class>
 		<class>entities.Subjects</class>
-
 		<properties>
 
 			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/library"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-			<property name="hibernate.connection.username" value="rivafeed"/>
-			<property name="hibernate.connection.password" value="RivaFeed@2021"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="Bs#705112"/>
 			<property name="hibernate.connection.autocommit" value="false"/>
 			<property name="hibernate.connection.CharSet" value="utf8"/>
 			<property name="hibernate.connection.characterEncoding" value="utf8"/>

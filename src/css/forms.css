@@ -1,0 +1,40 @@
+@font-face {
+    src: url('NRT-Bd.ttf');
+}
+
+.root {
+    -fx-background-color: #f0f1f2;
+}
+
+#pageTitle {
+    -fx-font-size: 300%;
+    -fx-alignment: center;
+    -fx-border-color: wheat;
+
+}
+
+#vBoxPagePreview {
+    -fx-background-color: #F0F0F0;
+    -fx-font-size: 26;
+    -fx-font-style: inherit;
+    -fx-font-family: "NRT-Bd";
+    -fx-text-fill: black;
+
+}
+
+#fieldLables {
+    -fx-background-color: #212F3D;
+    -fx-border-color: #cba84f;
+
+    -fx-text-fill: #FFF;
+
+
+}
+
+#textFieldStyle {
+    -fx-background-color: #F5F5F5;
+    -fx-border-color: #2C3E50;
+    -fx-text-fill: #000000;
+    -fx-text-alignment: center;
+
+}

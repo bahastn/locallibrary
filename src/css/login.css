@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Fleftex';
+    src: url('../font/Audiowide-Regular.ttf');
+}
+
+#label {
+    -fx-font-family: 'Fleftex';
+    -fx-font-size: 60;
+}
+
+#button {
+    -fx-background-color: #BA4A00;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-border-color: #1B2631;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+}
+
+#button:hover {
+    -fx-border-color: #1B2631;
+    -fx-background-color: #FAD7A0;
+}
+
+#button:focused {
+    -fx-border-color: #1B2631;
+    -fx-background-color: #FAD7A0;
+}
+
+#button-small {
+    -fx-background-color: #BA4A00;
+    -fx-border-color: #1B2631;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+    -fx-font-size: 13;
+    -fx-font-family: K2D;
+    -fx-font-weight: bold;
+}
+
+#button-small:hover {
+    -fx-border-color: #1B2631;
+    -fx-background-color: #FAD7A0;
+}
+
+#button-small:focused {
+    -fx-border-color: #1B2631;
+    -fx-background-color: #FAD7A0;
+}
+
+#button_VBox {
+    -fx-background-color: #DC7633;
+    -fx-border-color: #F4D03F;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+    -fx-font-size: 13;
+    -fx-font-family: K2D;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+#button_VBox-small {
+    -fx-background-color: #DC7633;
+    -fx-border-color: #F4D03F;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+    -fx-font-size: 10;
+    -fx-font-family: K2D;
+    -fx-font-weight: bold;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+#button_VBox:hover {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: bisque;
+    -fx-text-fill: #ffe4c4;
+}
+
+#button_VBox:pressed {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #ffe4c4;
+    -fx-text-fill: #ffe4c4;
+}
+
+#button_VBox:focused {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #ffe4c4;
+    -fx-text-fill: #ffe4c4;
+}
+
+#button_data_entry {
+    -fx-background-color: #DC7633;
+    -fx-border-color: #000;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-text-fill: black;
+    -fx-font-size: 13;
+    -fx-font-family: K2D;
+    -fx-font-weight: bold;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+
+#button_data_entry:hover {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #000;
+    -fx-text-fill: black;
+    -fx-border-width: 1;
+}
+
+#button_data_entry:pressed {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #ffe4c4;
+    -fx-text-fill: #ffe4c4;
+}
+
+#button_data_entry:focused {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #ffe4c4;
+    -fx-text-fill: #ffe4c4;
+}
+
+#button_menu {
+    -fx-background-color: #dfeaea;
+    -fx-border-color: #000;
+    -fx-border-style: solid;
+    -fx-text-fill: black;
+    -fx-font-size: 13;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#button_menu:hover {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #fff9f9;
+    -fx-text-fill: #FFF;
+}
+
+#button_menu:focused {
+    -fx-background-color: #030339;
+    -fx-border-color: #3c1b1b;
+    -fx-text-fill: #FFF;
+}
+
+#button_menu:pressed {
+    -fx-background-color: #2f4f4f;
+    -fx-border-color: #3c1b1b;
+    -fx-text-fill: #FFF;
+}
+

@@ -19,12 +19,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA_UNIT");
-        EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        em.getTransaction().commit();
-        em.close();
-        emf.close();
+
        launch(args);
     }
 }

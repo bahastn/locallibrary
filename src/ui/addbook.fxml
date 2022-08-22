@@ -56,11 +56,11 @@
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <Label id="fieldLables" fx:id="fieldLables2111" alignment="CENTER" contentDisplay="CENTER" layoutX="1538.0" layoutY="569.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="جۆری سەرچاوە" textAlignment="CENTER" textFill="#f0eded">
+      <Label id="fieldLables" fx:id="fieldLables21111" alignment="CENTER" contentDisplay="CENTER" layoutX="1538.0" layoutY="573.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="زمان" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="bookTypeField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="569.0" prefHeight="50.0" prefWidth="1257.0" promptText="شوێن/رەف" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="languageField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="573.0" prefHeight="50.0" prefWidth="1257.0" promptText="زمان" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
    </children>
 </AnchorPane>

@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 @Table(name = "language")
 @Entity
+@NamedQuery(name = "findByLanguage", query = "select l from Language l where l.language =?1")
 public class Language {
     private Long languageId;
     private String language;

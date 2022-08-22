@@ -15,6 +15,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "AUTUORS")
+@NamedQuery(name = "findByAuthor", query = "SELECT a from Authors a where a.authorName = ?1")
 public class Authors {
     private Long authorId;
     private String authorNumber;

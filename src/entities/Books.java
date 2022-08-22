@@ -24,7 +24,6 @@ public class Books {
     private Authors author;
     private Authors author2;
     private Integer yearOfPublish;
-    private Types type;
     private String location;
     private Subjects bookSubject;
     private Language language;
@@ -72,14 +71,6 @@ public class Books {
 
     public void setBookSubject(Subjects bookSubject) {
         this.bookSubject = bookSubject;
-    }
-
-    public Types getType() {
-        return type;
-    }
-
-    public void setType(Types type) {
-        this.type = type;
     }
 
     public String getBookTitle() {

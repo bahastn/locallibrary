@@ -2,9 +2,7 @@ package entities;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -17,11 +15,13 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "SUBJECTS")
+@NamedQuery(name = "findBySubject", query = "select s from Subjects s where s.subject =?1")
 public class Subjects {
     private Long subjectId;
     private String subject;
     private LocalDateTime addedDate;
 @Id
+@GeneratedValue(strategy = GenerationType.AUTO)
     public Long getSubjectId() {
         return subjectId;
     }

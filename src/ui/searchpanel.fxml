@@ -20,15 +20,15 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="table" layoutY="105.0" onMouseClicked="#printPriview" prefHeight="723.0" prefWidth="1910.0" stylesheets="@../css/tableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0">
+      <TableView fx:id="table" layoutY="105.0" prefHeight="723.0" prefWidth="1910.0" stylesheets="@../css/tableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0">
          <columns>
-            <TableColumn fx:id="category" minWidth="100.0" prefWidth="144.0" text="زمان" />
-            <TableColumn fx:id="summaryColumn" minWidth="150.0" prefWidth="162.0" text="شوێن" />
-            <TableColumn fx:id="relatedToEmployeeColumn" minWidth="150.0" prefWidth="210.0" text="نووسەر ٢" />
-            <TableColumn fx:id="branchColumn" maxWidth="615.0" minWidth="150.0" prefWidth="243.0" text="نووسەر ١" />
+            <TableColumn fx:id="languageColumn" minWidth="100.0" prefWidth="144.0" text="زمان" />
+            <TableColumn fx:id="locationColumn" minWidth="150.0" prefWidth="162.0" text="شوێن" />
+            <TableColumn fx:id="author2Column" minWidth="150.0" prefWidth="210.0" text="نووسەر ٢" />
+            <TableColumn fx:id="authorColumn" maxWidth="615.0" minWidth="150.0" prefWidth="243.0" text="نووسەر ١" />
             <TableColumn fx:id="dateColumn" maxWidth="628.0" minWidth="100.0" prefWidth="153.0" text="ساڵی دەرچوون" />
             <TableColumn fx:id="subjectColumn" prefWidth="429.0" text="بابەت" />
-            <TableColumn fx:id="documentNumberColumn" prefWidth="568.0" text="ناونیشانی کتێب" />
+            <TableColumn fx:id="titleColumn" prefWidth="568.0" text="ناونیشانی کتێب" />
          </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="1343.0" layoutY="19.0" prefHeight="40.0" prefWidth="565.0" style="-fx-border-color: #1C2833; -fx-background-color: #566573;" text="وشە/ناونیشان" textFill="WHITE">
@@ -66,7 +66,7 @@
             <Font name="Calibri Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="langaugeFieldSearch" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="60.0" prefHeight="44.0" prefWidth="240.0" promptText="زمان" style="-fx-background-color: #D5D8DC; -fx-border-color: #273746;">
+      <TextField fx:id="languageFieldSearch" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="60.0" prefHeight="44.0" prefWidth="240.0" promptText="زمان" style="-fx-background-color: #D5D8DC; -fx-border-color: #273746;">
          <font>
             <Font size="20.0" />
          </font>

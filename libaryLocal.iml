@@ -3,7 +3,9 @@
   <component name="FacetManager">
     <facet type="hibernate" name="Hibernate">
       <configuration>
-        <datasource-map />
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" />
+        </datasource-map>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -26,5 +28,6 @@
     <orderEntry type="library" name="postgresql-9.4-1202.jdbc4" level="project" />
     <orderEntry type="library" name="Hibernate 5.4.11-5.4.11" level="project" />
     <orderEntry type="library" name="JPA 2.1-2.1" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

@@ -12,9 +12,9 @@
    <children>
       <AnchorPane layoutX="207.0" layoutY="47.0" prefHeight="80.0" prefWidth="1910.0" style="-fx-background-color: #333333;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label id="label" alignment="CENTER" prefHeight="35.0" prefWidth="1910.0" stylesheets="@../css/login.css" text="Library Management System" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="1910.0" text="کتێبخانە" textAlignment="CENTER" textFill="#ffc800" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
-                  <Font name="AdobeDevanagari-Regular" size="61.0" />
+                  <Font name="Calibri Bold" size="62.0" />
                </font>
             </Label>
          </children>
@@ -25,7 +25,10 @@
             <Button id="button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openInfoPanel" prefHeight="35.0" prefWidth="250.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" stylesheets="@../css/login.css" text="زانیاری" />
             <Button id="button" contentDisplay="CENTER" layoutX="710.0" layoutY="15.0" mnemonicParsing="false" onAction="#openBookManagementPanel" prefHeight="35.0" prefWidth="250.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" stylesheets="@../css/login.css" text="رێکخستنی کتێب" />
             <Button id="button" contentDisplay="CENTER" layoutX="580.0" layoutY="15.0" mnemonicParsing="false" onAction="#openBookInfoPanel" prefHeight="35.0" prefWidth="250.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" stylesheets="@../css/login.css" text="زیادکردنی کتێب" />
-            <Button id="button" fx:id="searchButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openSearchPanel" prefHeight="35.0" prefWidth="250.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" stylesheets="@../css/login.css" text="گەڕان" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+            <Button id="button" fx:id="searchButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openSearchPanel" prefHeight="9.0" prefWidth="250.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" stylesheets="@../css/login.css" text="گەڕان" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="42.0" />
+               </font></Button>
          </children>
          <opaqueInsets>
             <Insets left="25.0" right="20.0" />
@@ -34,6 +37,6 @@
             <Insets left="200.0" right="200.0" />
          </padding>
       </HBox>
-      <Pane fx:id="homePan" layoutY="131.0" prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #D8E6F2; -fx-border-color: #031A2F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+      <Pane fx:id="homePan" layoutY="135.0" prefHeight="826.0" prefWidth="1910.0" style="-fx-background-color: #D8E6F2; -fx-border-color: #031A2F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="135.0" />
    </children>
 </AnchorPane>

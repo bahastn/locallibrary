@@ -9,17 +9,19 @@
 }
 
 #button {
-    -fx-background-color: #BA4A00;
-    -fx-font-size: 13;
+    -fx-background-color: #2874A6;
+    -fx-font-size: 18;
     -fx-font-weight: bold;
-    -fx-border-color: #1B2631;
+    -fx-border-color: #2874A6;
     -fx-border-style: solid;
-    -fx-text-fill: black;
+    -fx-text-fill: white;
+    -fx-font-family: Calibri;
 }
 
 #button:hover {
     -fx-border-color: #1B2631;
     -fx-background-color: #FAD7A0;
+    -fx-text-fill: #273746;
 }
 
 #button:focused {

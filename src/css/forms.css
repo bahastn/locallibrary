@@ -25,8 +25,11 @@
 #fieldLables {
     -fx-background-color: #212F3D;
     -fx-border-color: #cba84f;
-
     -fx-text-fill: #FFF;
+    -fx-font-family: Calibri;
+    -fx-text-fill: yellow;
+    -fx-font-size: 25;
+
 
 
 }
@@ -36,5 +39,7 @@
     -fx-border-color: #2C3E50;
     -fx-text-fill: #000000;
     -fx-text-alignment: center;
+    -fx-font-size: 30;
+    -fx-font-family: Calibri;
 
 }

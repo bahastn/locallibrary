@@ -9,13 +9,13 @@
 
 <AnchorPane prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #F1F1F1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddBook">
    <children>
-      <Label contentDisplay="CENTER" layoutX="1483.0" layoutY="43.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="47.0" prefWidth="315.0" text="زیادکردنی کتێب">
+      <Label contentDisplay="CENTER" layoutX="1483.0" layoutY="43.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="47.0" prefWidth="315.0" text="فۆڕمی زیادکردنی کتێب">
          <font>
             <Font name="Arial" size="40.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff07" height="525.0" layoutX="242.0" layoutY="153.0" stroke="#00000019" strokeType="INSIDE" width="1572.0" />
-      <Button id="button_menu" layoutX="728.0" layoutY="713.0" mnemonicParsing="false" onAction="#addBook" prefHeight="52.0" prefWidth="288.0" stylesheets="@../css/login.css" text="داکردن">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff07" height="576.0" layoutX="174.0" layoutY="102.0" stroke="#00000019" strokeType="INSIDE" width="1640.0" />
+      <Button id="button" layoutX="911.0" layoutY="705.0" mnemonicParsing="false" onAction="#addBook" prefHeight="52.0" prefWidth="385.0" stylesheets="@../css/login.css" text="داکردن">
          <font>
             <Font name="Calibri" size="29.0" />
          </font>
@@ -25,32 +25,50 @@
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="bookTitleField" alignment="CENTER_RIGHT" layoutX="264.0" layoutY="185.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناونیشانی کتێب" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="bookTitleField" alignment="CENTER_RIGHT" layoutX="264.0" layoutY="185.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناونیشانی کتێب" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
       <Label id="fieldLables" fx:id="fieldLables1" alignment="CENTER" contentDisplay="CENTER" layoutX="1534.0" layoutY="250.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="ناوی نووسەر١" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="authorField" alignment="CENTER_RIGHT" layoutX="264.0" layoutY="250.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناوی نووسەر" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="authorField" alignment="CENTER_RIGHT" layoutX="264.0" layoutY="250.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناوی نووسەر" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
+      <TextField id="textFieldStyle" fx:id="authorField2" alignment="CENTER_RIGHT" layoutX="263.0" layoutY="311.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناوی نووسەر" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
       <Label id="fieldLables" fx:id="fieldLables2" alignment="CENTER" contentDisplay="CENTER" layoutX="1537.0" layoutY="377.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="ساڵی دەرچوون" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="issueYearField" alignment="CENTER_RIGHT" layoutX="267.0" layoutY="377.0" prefHeight="50.0" prefWidth="1257.0" promptText="ساڵی دەرچوون" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="issueYearField" alignment="CENTER_RIGHT" layoutX="267.0" layoutY="377.0" prefHeight="50.0" prefWidth="1257.0" promptText="ساڵی دەرچوون" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
       <Label id="fieldLables" fx:id="fieldLables21" alignment="CENTER" contentDisplay="CENTER" layoutX="1538.0" layoutY="442.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="بابەت" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="subjectField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="442.0" prefHeight="50.0" prefWidth="1257.0" promptText="بابەت" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="subjectField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="442.0" prefHeight="50.0" prefWidth="1257.0" promptText="بابەت" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
       <Label id="fieldLables" fx:id="fieldLables211" alignment="CENTER" contentDisplay="CENTER" layoutX="1540.0" layoutY="509.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="شوێن/رەف" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="locationField" alignment="CENTER_RIGHT" layoutX="270.0" layoutY="509.0" prefHeight="50.0" prefWidth="1257.0" promptText="شوێن/رەف" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
-      <TextField id="textFieldStyle" fx:id="authorField2" alignment="CENTER_RIGHT" layoutX="263.0" layoutY="311.0" prefHeight="50.0" prefWidth="1257.0" promptText="ناوی نووسەر" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="locationField" alignment="CENTER_RIGHT" layoutX="270.0" layoutY="509.0" prefHeight="50.0" prefWidth="1257.0" promptText="شوێن/رەف" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
       <Label id="fieldLables" fx:id="fieldLables11" alignment="CENTER" contentDisplay="CENTER" layoutX="1535.0" layoutY="311.0" prefHeight="50.0" prefWidth="250.0" stylesheets="@../css/forms.css" text="ناوی نووسەر٢" textAlignment="CENTER" textFill="#f0eded">
          <font>
             <Font name="K2D Regular" size="15.0" />
@@ -61,6 +79,9 @@
             <Font name="K2D Regular" size="15.0" />
          </font>
       </Label>
-      <TextField id="textFieldStyle" fx:id="languageField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="573.0" prefHeight="50.0" prefWidth="1257.0" promptText="زمان" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css" />
+      <TextField id="textFieldStyle" fx:id="languageField" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="573.0" prefHeight="50.0" prefWidth="1257.0" promptText="زمان" stylesheets="@../../../documentarchive/src/view/css/incomingStyle.css">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font></TextField>
    </children>
 </AnchorPane>

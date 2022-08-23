@@ -7,9 +7,14 @@ import javafx.scene.input.MouseEvent;
 public class SearchController {
 
 
-    public void searchEmployee(ActionEvent actionEvent) {
-    }
+    public TextField subjectFieldSearch;
+    public TextField yearFieldSearch;
+    public TextField authorFieldSearch;
+    public TextField langaugeFieldSearch;
 
     public void printPriview(MouseEvent mouseEvent) {
+    }
+
+    public void searchButton(ActionEvent actionEvent) {
     }
 }

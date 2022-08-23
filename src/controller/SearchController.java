@@ -21,7 +21,7 @@ public class SearchController {
     public TableColumn<BookList, String> locationColumn;
     public TableColumn<BookList, String> author2Column;
     public TableColumn<BookList, String> authorColumn;
-    public TableColumn<BookList, String> dateColumn;
+    public TableColumn<BookList, Integer> dateColumn;
     public TableColumn<BookList, String> subjectColumn;
     public TableColumn<BookList, String> titleColumn;
     public TableView<BookList> table;

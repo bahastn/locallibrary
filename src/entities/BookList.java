@@ -3,12 +3,12 @@ package entities;
 public class BookList {
 
     private String bookTitle;
-    private Authors author;
-    private Authors author2;
+    private String author;
+    private String author2;
     private Integer yearOfPublish;
     private String location;
-    private Subjects bookSubject;
-    private Language language;
+    private String bookSubject;
+    private String language;
 
 
     public String getBookTitle() {
@@ -19,19 +19,19 @@ public class BookList {
         this.bookTitle = bookTitle;
     }
 
-    public Authors getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(Authors author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
-    public Authors getAuthor2() {
+    public String getAuthor2() {
         return author2;
     }
 
-    public void setAuthor2(Authors author2) {
+    public void setAuthor2(String author2) {
         this.author2 = author2;
     }
 
@@ -51,19 +51,19 @@ public class BookList {
         this.location = location;
     }
 
-    public Subjects getBookSubject() {
+    public String getBookSubject() {
         return bookSubject;
     }
 
-    public void setBookSubject(Subjects bookSubject) {
+    public void setBookSubject(String bookSubject) {
         this.bookSubject = bookSubject;
     }
 
-    public Language getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(Language language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 }

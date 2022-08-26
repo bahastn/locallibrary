@@ -4,12 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class LoginController {
     public Button searchButton;
     public Pane homePan;
+    public Button exit;
+
 
     public void openSearchPanel(ActionEvent actionEvent) throws IOException {
         Pane searchPan = null;
@@ -37,5 +40,11 @@ public class LoginController {
         searchPan = FXMLLoader.load(getClass().getResource("/ui/addbook.fxml"));
         homePan.getChildren().removeAll();
         homePan.getChildren().add(searchPan);
+    }
+
+    public void closeApplication(ActionEvent mouseEvent) {
+        Stage stage = (Stage) exit.getScene().getWindow();
+        stage.close();
+
     }
 }

@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #D0DFDF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
-
+<AnchorPane prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #021B34;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Info">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="234.0" text="Design and Developed by  " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Audiowide" size="47.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="315.0" text="EGFS  Software LLC" textAlignment="CENTER" textFill="#9a490e" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0">
+         <font>
+            <Font name="Audiowide" size="87.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="523.0" text="Contact Info:" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="576.0" text="Rebeen Jabar 0750 461 1493" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="705.0" layoutY="638.0" text="Bahast Saber 0750 449 1695" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1256.0" layoutY="737.0" text="پێشکەشە بە کتێبخانەی خاڵی خۆشەویستمان (محمود محمد)" textFill="#e8ce0d" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

@@ -3,6 +3,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #0FDFDF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+<AnchorPane prefHeight="830.0" prefWidth="1910.0" style="-fx-background-color: #F1F1F1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageBook">
 
 </AnchorPane>

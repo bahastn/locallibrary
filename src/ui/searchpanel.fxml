@@ -15,12 +15,12 @@
             <Font size="20.0" />
          </font>
       </TextField>
-      <Button id="button" layoutX="90.0" layoutY="24.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="63.0" prefWidth="148.0" style="-fx-background-color: #9C640C;" stylesheets="@../css/login.css" text="گەڕان">
+      <Button id="button" layoutX="180.0" layoutY="19.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="85.0" prefWidth="118.0" style="-fx-background-color: #9C640C;" stylesheets="@../css/login.css" text="گەڕان">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="table" layoutY="105.0" prefHeight="723.0" prefWidth="1910.0" stylesheets="@../css/tableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0">
+      <TableView fx:id="table" layoutY="105.0" prefHeight="704.0" prefWidth="1910.0" stylesheets="@../css/tableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="107.0">
          <columns>
             <TableColumn fx:id="languageColumn" minWidth="100.0" prefWidth="144.0" text="زمان" />
             <TableColumn fx:id="locationColumn" minWidth="150.0" prefWidth="162.0" text="شوێن" />
@@ -66,15 +66,20 @@
             <Font name="Calibri Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="languageFieldSearch" alignment="CENTER_RIGHT" layoutX="268.0" layoutY="60.0" prefHeight="44.0" prefWidth="240.0" promptText="زمان" style="-fx-background-color: #D5D8DC; -fx-border-color: #273746;">
+      <TextField fx:id="languageFieldSearch" alignment="CENTER_RIGHT" layoutX="308.0" layoutY="60.0" prefHeight="46.0" prefWidth="200.0" promptText="زمان" style="-fx-background-color: #D5D8DC; -fx-border-color: #273746;">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <Label alignment="CENTER" layoutX="268.0" layoutY="19.0" prefHeight="40.0" prefWidth="240.0" style="-fx-border-color: #1C2833; -fx-background-color: #566573;" text="زمان" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="308.0" layoutY="19.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: #1C2833; -fx-background-color: #566573;" text="زمان" textFill="WHITE">
          <font>
             <Font name="Calibri Bold" size="25.0" />
          </font>
       </Label>
+      <Button id="button" layoutX="34.0" layoutY="19.0" mnemonicParsing="false" onAction="#exportButton" prefHeight="85.0" prefWidth="118.0" style="-fx-background-color: #9C640C;" stylesheets="@../css/login.css" text="Export">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

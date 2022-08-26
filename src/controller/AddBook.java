@@ -5,14 +5,19 @@ import entities.Books;
 import entities.Language;
 import entities.Subjects;
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import org.controlsfx.control.textfield.TextFields;
+import services.ListFields;
 import services.ValidationService;
 
 import javax.persistence.*;
 import javax.security.auth.Subject;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 
-public class AddBook {
+public class AddBook implements Initializable {
     public TextField bookTitleField;
     public TextField authorField;
     public TextField authorField2;
@@ -172,5 +177,12 @@ public class AddBook {
         locationField.clear();
          languageField.clear();
 
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        ListFields listFields = new ListFields();
+        TextFields.bindAutoCompletion(subjectField, listFields.listOfSubjects());
+        TextFields.bindAutoCompletion(languageField, listFields.listOfLanguages());
     }
 }

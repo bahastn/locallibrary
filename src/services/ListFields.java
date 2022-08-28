@@ -21,6 +21,8 @@ public class ListFields {
             String subject = new String(s.getSubject());
             set.add(subject);
         }
+        em.close();
+        emf.close();
 
         return set;
     }
@@ -35,6 +37,8 @@ public class ListFields {
             String language = new String(l.getLanguage());
             set.add(language);
         }
+        em.close();
+        emf.close();
 
         return set;
     }

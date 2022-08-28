@@ -30,5 +30,8 @@
     <orderEntry type="library" name="JPA 2.1-2.1" level="project" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="controlsfx-8.20.8" level="project" />
+    <orderEntry type="library" name="poi-4.0.0" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.1" level="project" />
+    <orderEntry type="library" name="stax-ex-1.8" level="project" />
   </component>
 </module>

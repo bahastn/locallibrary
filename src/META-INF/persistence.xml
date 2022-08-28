@@ -7,12 +7,9 @@
 		<class>entities.Language</class>
 		<class>entities.Subjects</class>
 		<properties>
-			<!--			<property name="hibernate.connection.url" value="jdbc:postgresql://192.168.20.107:5432/portal"/>-->
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/locallibrary"/>
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect"/>
-<!--			<property name="hibernate.connection.username" value="portal"/>-->
-<!--			<property name="hibernate.connection.password" value="Per@2020#jul"/>-->
 			<property name="hibernate.connection.username" value="postgres"/>
 			<property name="hibernate.connection.password" value="Bs#705112"/>
 			<property name="hibernate.connection.autocommit" value="false"/>

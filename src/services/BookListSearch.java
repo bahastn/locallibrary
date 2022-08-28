@@ -5,10 +5,22 @@ import entities.Books;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import java.awt.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.time.LocalDate;
 import java.util.List;
 
 public class BookListSearch {
@@ -36,10 +48,96 @@ public class BookListSearch {
             bookList.setYearOfPublish(b.getYearOfPublish());
             list.add(bookList);
         }
+        em.close();
+        emf.close();
 
 
         return list;
     }
+
+    /**
+     *
+     * @param keyWord
+     * @param subject
+     * @param year
+     * @param author
+     * @param language
+     */
+    public void exportToExcel(String keyWord, String subject, Integer year, String author, String language) {
+
+        try {
+            XSSFWorkbook workbook = new XSSFWorkbook();
+            XSSFSheet sheet = workbook.createSheet("Scale");
+            Font font = sheet.getWorkbook().createFont();
+            font.setFontName("Arial");
+            font.setFontHeightInPoints((short) 14);
+            CellStyle style = sheet.getWorkbook().createCellStyle();
+            style.setFont(font);
+            style.setWrapText(true);
+            style.setAlignment(HorizontalAlignment.CENTER);
+            style.setVerticalAlignment(VerticalAlignment.CENTER);
+            XSSFRow header1 = sheet.createRow(0);
+            header1.setRowStyle(style);
+            header1.createCell(0).setCellValue("ت");
+            header1.createCell(1).setCellValue("ناونیشان");
+            header1.createCell(2).setCellValue("ناوی نووسەر١ ");
+            header1.createCell(3).setCellValue("ناوی نووسەر٢");
+            header1.createCell(4).setCellValue("ساڵی دەرچوون");
+            header1.createCell(5).setCellValue("بانەت");
+            header1.createCell(6).setCellValue("زمان");
+
+
+
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA_UNIT");
+            EntityManager em = emf.createEntityManager();
+            Query query = em.createQuery(queryBuilder(keyWord, subject, year,author, language));
+            List<Books> booksList = query.getResultList();
+            int index = 1;
+            Integer sequence = 0;
+
+            for (Books b: booksList) {
+
+                XSSFRow row = sheet.createRow(index);
+                row.createCell(0).setCellValue(sequence + 1);
+                row.createCell(1).setCellValue(b.getBookTitle());
+                row.createCell(2).setCellValue(b.getAuthor().getAuthorName());
+                row.createCell(3).setCellValue(b.getAuthor2().getAuthorName());
+                row.createCell(4).setCellValue(b.getYearOfPublish());
+                row.createCell(5).setCellValue(b.getBookSubject().getSubject());
+                row.createCell(6).setCellValue(b.getLanguage().getLanguage());
+
+
+                index += 1;
+                sequence ++;
+            }
+
+
+            String fileName = "_راپۆرتی کتێب_" + keyWord+ author+language + LocalDate.now().toString() + ".xlsx";
+            FileOutputStream fileOutputStream = new FileOutputStream(new File("C:/data", fileName));
+            workbook.write(fileOutputStream);
+            fileOutputStream.flush();
+            fileOutputStream.close();
+        } catch (Exception e) {
+
+        }
+        try {
+            String fileName = "_راپۆرتی کتێب_" + keyWord+ author+language + LocalDate.now().toString() + ".xlsx";;
+            File file = new File("C:/data", fileName);
+            Desktop desktop = Desktop.getDesktop();
+            if(file.exists()){
+                desktop.open(file);
+            }
+
+        }
+        catch (Exception err){
+            err.getLocalizedMessage();
+
+        }
+    }
+
+
+
+
     String queryBuilder(String keyWord, String subject, Integer year, String author, String language){
         String keyWordQ="";
         String subjectQ = "";
